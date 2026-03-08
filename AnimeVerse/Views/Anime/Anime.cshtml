@@ -1,0 +1,40 @@
+@model List<AnimeVerse.Models.Anime>
+
+@{
+    ViewData["Title"] = "Populära animer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>
+    @(string.IsNullOrWhiteSpace(Context.Request.Query["search"]) 
+        ? "Populära animer" 
+        : $"Sökresultat för \"{Context.Request.Query["search"]}\"")
+</h1>
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="no-results-message">@ViewBag.Message</div>
+}
+
+<section class="anime-grid">
+    @if (Model != null && Model.Any())
+    {
+        foreach (var anime in Model)
+        {
+            <a asp-controller="Anime" asp-action="Details" asp-route-id="@anime.MalId" class="anime-link">
+                <div class="anime-card">
+                    <img src="@anime.ImageUrl" alt="@anime.Title" />
+                    <div class="anime-info">
+                        <h3>@anime.Title</h3>
+                        <p class="score">
+                            @(anime.Score > 0 ? $"Betyg: {anime.Score:F1}" : "Betyg: Okänt")
+                        </p>
+                        <p class="year">
+                            @(anime.Year > 0 ? anime.Year.ToString() : "Okänt år")
+                        </p>
+                    </div>
+                </div>
+            </a>
+        }
+    }
+</section>

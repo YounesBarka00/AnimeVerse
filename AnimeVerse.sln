@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimeVerse", "AnimeVerse\AnimeVerse.csproj", "{13AEB356-1D7C-4DB2-9256-E61D52F15643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimeVerse.Tests", "AnimeVerse.Tests \AnimeVerse.Tests.csproj", "{223385C3-D395-4D41-8BBB-9FF3870BF23A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13AEB356-1D7C-4DB2-9256-E61D52F15643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AEB356-1D7C-4DB2-9256-E61D52F15643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AEB356-1D7C-4DB2-9256-E61D52F15643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AEB356-1D7C-4DB2-9256-E61D52F15643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223385C3-D395-4D41-8BBB-9FF3870BF23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223385C3-D395-4D41-8BBB-9FF3870BF23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223385C3-D395-4D41-8BBB-9FF3870BF23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223385C3-D395-4D41-8BBB-9FF3870BF23A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
