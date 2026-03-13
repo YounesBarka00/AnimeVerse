@@ -1,56 +1,44 @@
 @model AnimeVerse.Models.Anime
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = $"{Model?.Title ?? "Anime"} - AnimeVerse";
 }
 
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="utf-8" />
-    <title>@Model.Title - AnimeVerse</title>
-    
-    <link rel="stylesheet" href="~/css/main.css" />
-    <link rel="stylesheet" href="~/css/details.css" />
-    
-</head>
+<section class="details-container">
 
-<body>
-    <header>
-        <a asp-controller="Anime" asp-action="Index" class="logo">AnimeVerse</a>
+    <div class="details-image">
+        <img src="@Model.ImageUrl" alt="@($"{Model.Title} poster")" />
+    </div>
 
-        <div class="header-right">
-            <form method="get" asp-controller="Anime" asp-action="Index" class="search-bar">
-                <input type="text" name="search" class="search-input" placeholder="Sök anime..." />
-                <button type="submit" class="search-btn">Sök</button>
-            </form>
-        </div>
-    </header>
+    <div class="details-info">
 
-    <section class="details-container">
-        <div class="details-image">
-            <img src="@Model.ImageUrl" alt="@Model.Title" />
+        <div class="details-meta">
+            <span class="meta title"><strong>Anime:</strong> @Model.Title</span>
+
+            <span class="meta year">
+                <strong>Year:</strong>
+                @(Model.Year > 0 ? Model.Year.ToString() : "Unknown")
+            </span>
+
+            <span class="meta score">
+                <strong>Rating:</strong>
+                @(Model.Score > 0 ? Model.Score.ToString("F1") : "Unknown")
+            </span>
         </div>
 
-        <div class="details-info">
-            <div class="details-meta">
-                <span class="meta title"><strong>Anime:</strong> @Model.Title</span>
-                <span class="meta year"><strong>År:</strong> @(Model.Year > 0 ? Model.Year.ToString() : "Okänt år")</span>
-                <span class="meta score"><strong>Betyg:</strong> @(Model.Score > 0 ? Model.Score.ToString("F1") : "Okänt")</span>
+        <div class="synopsis-card">
+            <div class="section-title">Synopsis</div>
+
+            <div>
+                @(string.IsNullOrWhiteSpace(Model.Synopsis)
+                    ? "No description available."
+                    : Model.Synopsis)
             </div>
-
-            <div class="synopsis-card">
-                <div class="section-title">Handling:</div>
-                <div>
-                    @(string.IsNullOrWhiteSpace(Model.Synopsis)
-                        ? "Ingen beskrivning tillgänglig."
-                        : Model.Synopsis)
-                </div>
-            </div>
-
-            <a href="javascript:history.back()" class="back-link">← Tillbaka</a>
-
         </div>
-    </section>
-</body>
-</html>
+
+        <a asp-controller="Anime" asp-action="Index" class="back-link">← Back</a>
+
+    </div>
+
+</section>

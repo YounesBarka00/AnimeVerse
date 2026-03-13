@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimeVerse.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be0f728bcb148182ab716b6f18c5ef4a5923ed29")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimeVerse.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimeVerse.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

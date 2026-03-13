@@ -1,19 +1,27 @@
 @{
     Layout = null;
-    var title = ViewData["Title"] ?? "AnimeVerse";
+    var title = ViewData["Title"]?.ToString() ?? "AnimeVerse";
 }
 
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@title</title>
-    
+
     <link rel="stylesheet" href="~/css/main.css" />
     <link rel="stylesheet" href="~/css/anime.css" />
+    <link rel="stylesheet" href="~/css/details.css" />
 
     <style>
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+        }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -22,7 +30,7 @@
             padding: 20px 40px;
             border-bottom: 2px solid #a4161a;
         }
-        
+
         .logo {
             font-size: 2rem;
             font-weight: 800;
@@ -39,7 +47,6 @@
         .header-right {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
         }
 
         .search-bar {
@@ -51,14 +58,14 @@
             padding: 8px;
             border: 1px solid #a4161a;
             background: #111;
-            color: white;
+            color: #fff;
             border-radius: 4px;
             width: 220px;
         }
 
         .search-btn {
             background: #a4161a;
-            color: white;
+            color: #fff;
             border: none;
             padding: 8px 14px;
             border-radius: 4px;
@@ -69,35 +76,29 @@
         .search-btn:hover {
             background: #ff5555;
         }
-        
+
         main.content {
             padding: 40px;
-        }
-
-        body {
-            background-color: #0a0a0a;
-            color: #fff;
-            font-family: "Segoe UI", Arial, sans-serif;
-            margin: 0;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <a asp-controller="Anime" asp-action="Index" class="logo">AnimeVerse</a>
+<header>
+    <a asp-controller="Anime" asp-action="Index" class="logo">AnimeVerse</a>
 
-        <div class="header-right">
-            <form method="get" asp-controller="Anime" asp-action="Index" class="search-bar">
-                <input type="text" name="search" class="search-input" placeholder="Sök anime..." />
-                <button type="submit" class="search-btn">Sök</button>
-            </form>
-        </div>
-    </header>
+    <div class="header-right">
+        <form method="get" asp-controller="Anime" asp-action="Index" class="search-bar">
+            <input type="search" name="search" class="search-input" placeholder="Search anime..." />
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+</header>
 
-    <main role="main" class="content">
-        @RenderBody()
-    </main>
+<main role="main" class="content">
+    @RenderBody()
+</main>
+
 </body>
 </html>
