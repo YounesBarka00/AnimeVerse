@@ -19,10 +19,10 @@ The application fetches real-time data from the **Jikan API**, which provides ac
 ## Screenshots
 
 ### Home Page
-![Home Page](AnimeVerse/screenshots/HomePage.png)
+![Home Page](AnimeVerse/screenshots/1.HomePage.png)
 
 ### Search
-![Search](AnimeVerse/screenshots/Search.png)
+![Search](AnimeVerse/screenshots/2.Search.png)
 
 ### Search Results
 ![Search Results](AnimeVerse/screenshots/3.Search_Results.png)
