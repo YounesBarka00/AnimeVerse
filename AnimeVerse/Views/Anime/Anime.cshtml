@@ -3,10 +3,14 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     var searchQuery = Context.Request.Query["search"].ToString();
-    ViewData["Title"] = string.IsNullOrWhiteSpace(searchQuery) ? "Popular Anime" : $"Search results for \"{searchQuery}\"";
+    ViewData["Title"] = string.IsNullOrWhiteSpace(searchQuery)
+        ? "Popular Anime"
+        : $"Results for \"{searchQuery}\"";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="page-header">
+    <h1>@ViewData["Title"]</h1>
+</div>
 
 @if (!string.IsNullOrEmpty(ViewBag.Message))
 {
@@ -19,21 +23,31 @@
         foreach (var anime in Model)
         {
             <a asp-controller="Anime" asp-action="Details" asp-route-id="@anime.MalId" class="anime-link">
+
                 <div class="anime-card">
+
                     <img src="@anime.ImageUrl" alt="@($"{anime.Title} poster")" />
 
                     <div class="anime-info">
+
                         <h3>@anime.Title</h3>
 
-                        <p class="score">
-                            @(anime.Score > 0 ? $"Rating: {anime.Score:F1}" : "Rating: Unknown")
-                        </p>
+                        <div class="anime-meta">
 
-                        <p class="year">
-                            @(anime.Year > 0 ? anime.Year.ToString() : "Unknown year")
-                        </p>
+                            <span class="meta-rating">
+                                @(anime.Score > 0 ? $" {anime.Score:F1}" : " N/A")
+                            </span>
+
+                            <span class="meta-year">
+                                @(anime.Year > 0 ? anime.Year.ToString() : "Unknown")
+                            </span>
+
+                        </div>
+
                     </div>
+
                 </div>
+
             </a>
         }
     }
