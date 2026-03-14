@@ -3,6 +3,8 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     var searchQuery = Context.Request.Query["search"].ToString();
+    
+    // Dynamically change the page title depending on whether the user searched or is viewing popular anime
     ViewData["Title"] = string.IsNullOrWhiteSpace(searchQuery)
         ? "Popular Anime"
         : $"Results for \"{searchQuery}\"";
@@ -34,6 +36,7 @@
 
                         <div class="anime-meta">
 
+                            <!-- Display rating and year, but show fallback values if the API returned missing data -->
                             <span class="meta-rating">
                                 @(anime.Score > 0 ? $" {anime.Score:F1}" : " N/A")
                             </span>

@@ -8,34 +8,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="450919d5-1052-4451-a604-bc57025eab09" name="Changes" comment="">
+    <list default="true" id="450919d5-1052-4451-a604-bc57025eab09" name="Changes" comment="Improve UI styling and layout">
+      <change afterPath="$PROJECT_DIR$/AnimeVerse/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimeVerse/screenshots/1.HomePage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimeVerse/screenshots/2.Search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimeVerse/screenshots/3.Search_Results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnimeVerse/screenshots/4.Anime_Details.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimeVerse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimeVerse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /bin/Debug/net8.0/CoverletSourceRootsMapping_AnimeVerse.Tests" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /bin/Debug/net8.0/CoverletSourceRootsMapping_AnimeVerse.Tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /obj/Debug/net8.0/AnimeVerse.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /obj/Debug/net8.0/AnimeVerse.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /obj/Debug/net8.0/AnimeVerse.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /obj/Debug/net8.0/AnimeVerse.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /obj/Debug/net8.0/AnimeVerse.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /obj/Debug/net8.0/AnimeVerse.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /AnimeFactoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /AnimeFactoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /AnimeServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /AnimeServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimeVerse.Tests /FakeHttpMessageHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse.Tests /FakeHttpMessageHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimeVerse/Controllers/AnimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Controllers/AnimeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimeVerse/Factories/AnimeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Factories/AnimeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimeVerse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimeVerse/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimeVerse/Views/Anime/Anime.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Views/Anime/Anime.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimeVerse/Views/Anime/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Views/Anime/Details.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimeVerse/Views/Services/AnimeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Views/Services/AnimeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/bin/Debug/net8.0/AnimeVerse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/bin/Debug/net8.0/AnimeVerse.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/bin/Debug/net8.0/AnimeVerse.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/bin/Debug/net8.0/AnimeVerse.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/bin/Debug/net8.0/AnimeVerse.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/bin/Debug/net8.0/AnimeVerse.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/AnimeVerse.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/ref/AnimeVerse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/ref/AnimeVerse.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/refint/AnimeVerse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/refint/AnimeVerse.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimeVerse/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AnimeVerse/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +37,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="3AezPtm0MOIJUwdvUDEibqKiUdy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -113,16 +106,35 @@
       <workItem from="1772967813740" duration="1395000" />
       <workItem from="1773066389101" duration="711000" />
       <workItem from="1773228174991" duration="206000" />
-      <workItem from="1773444247912" duration="1031000" />
+      <workItem from="1773444247912" duration="6924000" />
     </task>
+    <task id="LOCAL−00001" summary="Refactor UI to English and improve structure">
+      <option name="closed" value="true" />
+      <created>1773445476218</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1773445476219</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Improve UI styling and layout">
+      <option name="closed" value="true" />
+      <created>1773449258523</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1773449258523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Refactor UI to English and improve structure" />
+    <MESSAGE value="Improve UI styling and layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve UI styling and layout" />
   </component>
 </project>

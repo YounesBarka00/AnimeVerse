@@ -34,6 +34,7 @@ namespace AnimeVerse.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
+            // Retrieves a single anime by its ID and returns a 404 page if it doesn't exist
             var anime = await _animeService.GetAnimeByIdAsync(id);
 
             if (anime == null)

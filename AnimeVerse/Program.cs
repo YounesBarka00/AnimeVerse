@@ -3,7 +3,7 @@ using AnimeVerse.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-// Här registreras AnimeService som en HttpClient-tjänst via Dependency Injection. Det gör att alla API-anrop hanteras på ett effektivt och säkert sätt.
+// Register AnimeService with HttpClient using Dependency Injection so API calls are managed efficiently by ASP.NET
 builder.Services.AddHttpClient<IAnimeService, AnimeService>();
 
 var app = builder.Build();

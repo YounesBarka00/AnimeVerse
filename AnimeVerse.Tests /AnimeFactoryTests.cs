@@ -8,6 +8,7 @@ namespace AnimeVerse.Tests
         [Fact]
         public void Create_ShouldReturnAnimeObject()
         {
+            // Simulated JSON response from the API to verify that the factory correctly maps JSON data to an Anime object
             var json = "{\"mal_id\":1,\"title\":\"Naruto\",\"score\":8.5,\"year\":2002,\"images\":{\"jpg\":{\"image_url\":\"test.jpg\"}},\"synopsis\":\"En ung ninja som vill bli Hokage.\"}";
             var element = JsonDocument.Parse(json).RootElement;
             
@@ -22,7 +23,7 @@ namespace AnimeVerse.Tests
         [Fact]
         public void Create_ShouldHandleMissingFieldsGracefully()
         {
-            // Här testas hur AnimeFactory hanterar ofullständig data. Om JSON saknar vissa fält ska koden fortfarande skapa ett giltigt objekt.
+            // Tests how AnimeFactory handles incomplete JSON data; missing fields should not break object creation
             var json = "{\"title\":\"Okänd\"}";
             var element = JsonDocument.Parse(json).RootElement;
             

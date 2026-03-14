@@ -1,59 +1,95 @@
 # AnimeVerse
 
-AnimeVerse är en webbapplikation utvecklad i ASP.NET Core MVC med C# som huvudspråk.  
-Syftet är att ge användaren möjlighet att snabbt söka efter japanska animer och få information om titel, betyg, årtal och handling.  
-Applikationen hämtar data från det öppna Jikan API, som ger information om hundratals animer.
+AnimeVerse is a web application built with **ASP.NET Core MVC and C#** that allows users to search for Japanese anime and explore information such as title, rating, year and description.
 
-Teknik och struktur:
+The application fetches real-time data from the **Jikan API**, which provides access to a large anime database.
 
-(Språk och ramverk):
+---
 
-- C# (.NET 6)
-- ASP.NET Core MVC
-- HTML, CSS och Razor
-- xUnit (enhetstester)
+## Features
 
-(Arkitektur):
+- Search for anime by title
+- View detailed information (title, rating, year, poster and description)
+- Automatically displays popular anime on the homepage
+- Handles invalid or empty search queries
+- Responsive UI built with HTML and CSS
 
-- MVC-struktur (Model–View–Controller)
-- Factory-mönster för objekt­skapande
-- Dependency Injection för att koppla samman tjänster
-- Asynkrona metoder (async / await) för API-anrop
+---
 
-Funktioner:
+## Screenshots
 
-- Sök efter anime med titel via ett sökfält
-- Visa detaljer (titel, betyg, år, bild, beskrivning)
-- Hämtar populära animer automatiskt vid start
-- Felhantering vid tomma eller ogiltiga sökningar
-- Responsiv design med HTML och CSS
+### Home Page
+![Home Page](screenshots/1.HomePage.png)
 
-Avancerade C#-koncept (projektet använder):
+### Search
+![Search](screenshots/2.Search.png)
 
-- Asynkron programmering för att hämta data utan att låsa användargränssnittet
-- Interfaces (IAnimeService) för lös koppling
-- Factory Pattern (AnimeFactory) för att skapa objekt från JSON
-- Dependency Injection för effektiv resurshantering
+### Search Results
+![Search Results](screenshots/3.Search_Results.png)
 
-Testning:
+### Anime Details
+![Anime Details](screenshots/4.Anime_Details.png)
 
-Enhetstesterna har skapats med xUnit och är uppdelade i tydligt namngivna testklasser, där varje testklass ansvarar för att testa en specifik del av applikationen.
+---
 
-- AnimeFactoryTests testar att AnimeFactory korrekt skapar Anime-objekt från JSON-data samt hanterar ofullständig data på ett säkert sätt.
-- AnimeServiceTests testar att AnimeService returnerar korrekt data vid lyckade API-anrop och hanterar fel (404) korrekt genom användning av en fejkad HttpMessageHandler.
+## Tech Stack
 
-Totalt innehåller projektet fyra enhetstester.
+- **C# (.NET 6)**
+- **ASP.NET Core MVC**
+- **Razor Views**
+- **HTML & CSS**
+- **xUnit** for unit testing
+- **Jikan REST API**
 
+---
 
-Minneshantering:
+## Architecture
 
-- HttpClient hanteras via Dependency Injection för att undvika onödiga instanser
-- using används vid JSON-hantering för att frigöra resurser
-- Kod skrivs så att garbage collectorn arbetar effektivt (inga statiska listor som ligger kvar i minnet)
+The project follows a clean **MVC architecture** and applies several core C# and software design principles.
 
-Såhär kör du projektet:
+- **Model–View–Controller (MVC)**
+- **Dependency Injection**
+- **Factory Pattern**
+- **Async / Await for API calls**
+- **Service layer abstraction**
 
-1. Klona eller ladda ner projektet.
-2. Öppna mappen i Rider eller Visual Studio.
-3. Kör projektet:
+Key components:
 
+- AnimeController – handles user requests
+- AnimeService – communicates with the external API
+- AnimeFactory – converts API JSON responses into domain models
+- IAnimeService – interface used for loose coupling
+
+---
+
+## Testing
+
+Unit tests are written using **xUnit** to verify the functionality of core components.
+
+Tests include:
+
+- **AnimeFactoryTests**  
+  Verifies that JSON responses are correctly converted into **Anime** objects and handles missing data safely.
+
+- **AnimeServiceTests**  
+  Ensures that the service correctly returns data and properly handles API errors (such as 404 responses) using a mocked **HttpMessageHandler**.
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+
+2. Open the project in **JetBrains Rider** or **Visual Studio**
+
+3. Run the application
+
+## Developer
+
+Younes Barka
+
+GitHub
+https://github.com/YounesBarka00
+
+LinkedIn
+https://www.linkedin.com/in/younes-barka-b5b45136a/

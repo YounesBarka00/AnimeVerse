@@ -2,6 +2,8 @@
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
+    // Set a dynamic page title based on the anime title, with a fallback if the model is null
     ViewData["Title"] = $"{Model?.Title ?? "Anime"} - AnimeVerse";
 }
 
@@ -29,7 +31,8 @@
 
         <div class="synopsis-card">
             <div class="section-title">Synopsis</div>
-
+            
+            <!-- Show a default message if the API does not provide a synopsis -->
             <div>
                 @(string.IsNullOrWhiteSpace(Model.Synopsis)
                     ? "No description available."

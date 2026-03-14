@@ -2,8 +2,7 @@ using System.Net;
 
 namespace AnimeVerse.Tests
 {
-    // Denna klass ersätter verkliga HTTP-anrop under testning.
-    // Den skickar tillbaka ett fördefinierat JSON svar istället för att anropa ett riktigt API.
+    // Replaces real HTTP calls during testing by returning a predefined response instead of calling an external API
     public class FakeHttpMessageHandler : HttpMessageHandler
     {
         private readonly string _response;
@@ -17,6 +16,7 @@ namespace AnimeVerse.Tests
             HttpRequestMessage request,
             CancellationToken cancellationToken)
         {
+            // Simulate different API outcomes: return 404 if the response contains "error", otherwise return 200 OK
             var statusCode = _response.Contains("error")
                 ? HttpStatusCode.NotFound
                 : HttpStatusCode.OK;

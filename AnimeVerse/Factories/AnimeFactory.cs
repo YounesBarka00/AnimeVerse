@@ -7,6 +7,7 @@ namespace AnimeVerse.Factories
     {
         public static Anime CreateFromJsonElement(JsonElement item)
         {
+            // Safely extract values from the JSON response and provide default values if fields are missing
             var malId = item.TryGetProperty("mal_id", out var idEl) && idEl.ValueKind == JsonValueKind.Number
                 ? idEl.GetInt32()
                 : 0;
@@ -32,7 +33,8 @@ namespace AnimeVerse.Factories
             var synopsis = item.TryGetProperty("synopsis", out var synEl) && synEl.ValueKind == JsonValueKind.String
                 ? synEl.GetString() ?? ""
                 : "";
-
+            
+            // If the API does not provide a synopsis, ensure the application still shows a meaningful placeholder
             if (string.IsNullOrWhiteSpace(synopsis))
                 synopsis = "No description available.";
 

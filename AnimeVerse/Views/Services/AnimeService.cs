@@ -16,6 +16,8 @@ namespace AnimeVerse.Services
         public async Task<List<Anime>> GetPopularAnimeAsync()
         {
             var response = await _httpClient.GetAsync("https://api.jikan.moe/v4/top/anime");
+            
+            // Ensures the API request succeeded; otherwise an exception is thrown
             response.EnsureSuccessStatusCode();
 
             var json = await response.Content.ReadAsStringAsync();
@@ -47,6 +49,8 @@ namespace AnimeVerse.Services
 
             return data
                 .EnumerateArray()
+                
+                // Convert each JSON element from the API into an Anime object using the factory
                 .Select(AnimeFactory.CreateFromJsonElement)
                 .ToList();
         }
