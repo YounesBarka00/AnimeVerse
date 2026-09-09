@@ -86,7 +86,7 @@ Tests include:
 
 ## Developer
 
-Younes Barka
+Younes Barka & Abdirahman Mahamood
 
 GitHub
 https://github.com/YounesBarka00
