@@ -1,3 +1,13 @@
+## Developer
+
+Younes Barka & Abdirahman Mahamood
+
+LinkedIn
+
+Younes: https://www.linkedin.com/in/younes-barka-b5b45136a/
+
+Abdirahman: https://www.linkedin.com/in/abdirahman-mahamod-589a15297/
+
 # AnimeVerse
 
 AnimeVerse is a web application built with **ASP.NET Core MVC and C#** that allows users to search for Japanese anime and explore information such as title, rating, year and description.
@@ -83,16 +93,3 @@ Tests include:
 2. Open the project in **JetBrains Rider** or **Visual Studio**
 
 3. Run the application
-
-## Developer
-
-Younes Barka & Abdirahman Mahamood
-
-GitHub
-https://github.com/YounesBarka00
-
-LinkedIn
-
-Younes: https://www.linkedin.com/in/younes-barka-b5b45136a/
-
-Abdirahman: https://www.linkedin.com/in/abdirahman-mahamod-589a15297/
