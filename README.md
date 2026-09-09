@@ -92,4 +92,5 @@ GitHub
 https://github.com/YounesBarka00
 
 LinkedIn
-https://www.linkedin.com/in/younes-barka-b5b45136a/
+Younes Barka: https://www.linkedin.com/in/younes-barka-b5b45136a/
+Abdirahman Mahamood: https://www.linkedin.com/in/abdirahman-mahamod-589a15297/
